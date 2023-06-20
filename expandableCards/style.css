@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    color: #ffff;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.containerImg {
+    display: flex;
+    width: 90vw;
+}
+
+.containerImg>section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in;
+}
+
+.containerImg>section>h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+}
+
+.img1 {
+    background: url(https://wallpapers.com/images/hd/cool-cat-1350-x-900-picture-yhkj41he5yhh92xb.jpg);
+}
+
+.img1:active {
+    flex: 5;
+}
+
+.img1:active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.img2 {
+    background: url(https://www.thewestinhoteldublin.com/wp-content/uploads/2022/09/Westin-1350-x-900.jpg);
+}
+
+.img2:active {
+    flex: 5;
+}
+
+.img2:active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.img3 {
+    background: url(https://f7432d8eadcf865aa9d9-9c672a3a4ecaaacdf2fee3b3e6fd2716.ssl.cf3.rackcdn.com/C2299/U1536/IMG_89704-large.jpg);
+}
+
+.img3:active {
+    flex: 5;
+}
+
+.img3:active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.img4 {
+    background: url(https://www.mecmining.com.au/wp-content/uploads/2017/09/GOLD.jpg);
+}
+
+.img4:active {
+    flex: 5;
+}
+
+.img4:active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.img5 {
+    background: url(https://m.media-amazon.com/images/M/MV5BNmE0M2M2ZTUtOGI0MC00Mjg3LWJjZDQtOTcyYmFhYWNhNmU5XkEyXkFqcGdeQXVyOTA3MTMyOTk@._V1_FMjpg_UX1000_.jpg);
+}
+
+.img5:active {
+    flex: 5;
+}
+
+.img5:active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+    .containerImg {
+      width: 100vw;
+    }
+  
+    .img1:nth-of-type(4),
+    .img1:nth-of-type(5) {
+      display: none;
+    }
+    .img2:nth-of-type(4),
+    .img2:nth-of-type(5) {
+      display: none;
+    }
+    .img3:nth-of-type(4),
+    .img3:nth-of-type(5) {
+      display: none;
+    }
+    .img4:nth-of-type(4),
+    .img4:nth-of-type(5) {
+      display: none;
+    }
+    .img5:nth-of-type(4),
+    .img5:nth-of-type(5) {
+      display: none;
+    }
+  }
